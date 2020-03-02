@@ -94,7 +94,6 @@ body .bg_tittle_img{
     max-width: 1150px;
     width: 100%;
     padding: 19px 0;
-    /* background-color: blueviolet!important; */
 }
 .navigation_main button{
     border: solid 1px #ffffff;
@@ -335,7 +334,6 @@ body .bg_tittle_img{
 .section_slider_slider{
     max-width: 560px;
     min-height: 380px;
-    /* background: tomato; */
     margin:  0 auto;
     color: #2B2736;
 }
@@ -475,12 +473,8 @@ body .bg_tittle_img{
             box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2)
 }
 .contact_wrapper .main_button:hover{
-    /* background-color: #333333; */
     -webkit-box-shadow: none;
             box-shadow: none;
-}
-.contact_wrapper .main_button:focus{
-    /* background-color: #666666; */
 }
 .contact_adress span{
     font-size: 18px;
@@ -646,12 +640,6 @@ media
         padding: 100px 20px;
     }
 }
-
-
-
-
-
-
 .my_form{
     display: flex;
     flex-direction: column;
