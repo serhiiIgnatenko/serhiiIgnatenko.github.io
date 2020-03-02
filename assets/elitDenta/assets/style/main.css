@@ -74,7 +74,6 @@ body{
 }
 .call_back{
 	width: 200px;
-/*	width: 100%;*/
 	height: 45px;
 	border: none;
 	border-radius: 5px;
@@ -102,7 +101,6 @@ body{
 	        justify-content: center;
 	-webkit-box-align: center;
 	        align-items: center;
-/*	display: none;*/
 }
 .wrapper_call_back__box .modal-content{
 	width: 100%;
@@ -115,14 +113,11 @@ body{
 .modal-header .close{
 	position: absolute;
 	right: 1rem;
-	z-index: 2;
-	
+	z-index: 2;	
 }
 .call_back__for{
 	padding: 10px;
-/*	border: solid 3px #18afd3;*/
 	background-color: #fff;
-/*	position: absolute;*/
 }
 .call_back__for form{
 	max-width:  700px;
@@ -197,10 +192,6 @@ body{
 	display: flex;
 	justify-content: space-around;
 	width: 100%;
-/*
-	align-items: center;
-	height: 50px;
-*/
 }
 .nav_line a{
 	color: #000;
@@ -213,14 +204,9 @@ body{
 	border-bottom: solid 2px #f57e57;
 }
 .nav_line span:hover a{
-/*	color: #18afd3;*/
 	text-decoration: none;
 }
-/*
-.main_slider .carousel-item{
-	height: 640px;
-}
-*/
+
 .main_slider .carousel-item img{
 	background-color: #4c6575;
 }
@@ -273,10 +259,7 @@ body{
 	transition: top 1s;
 }
 .specialty_card:hover{
-/*	position: relative;*/
 	top: -20px;
-/*	transition: top 30s;*/
-/*	transition-duration: 30s;*/
 }
 .specialty_card a, .specialty_card a:hover{
 	color: #fff;
@@ -327,7 +310,6 @@ body{
 	background-color: #f6f6f6;
 	padding: 20px;
 	position: relative;
-/*	!!!!!!!!!*/
 }
 .examples_documents p{
 	font-family: Roboto;
@@ -338,7 +320,6 @@ body{
 	padding-bottom: 50px;
 }
 .examples_documents img{
-/*	width: 130px;*/
 	height: 150px;
 	-o-object-fit: contain;
 	   object-fit: contain;
@@ -384,17 +365,6 @@ body{
 .sledding .row{
 	padding: 50px 0;
 }
-/*
-.sledding span{
-	font-weight: 700;
-    display: block;
-	font-family: Roboto;
-    line-height: 60px;
-    font-size: 48px;
-	color: #fff;
-	text-align: center;
-}
-*/
 span.counter{
 	font-weight: 700;
     display: block;
@@ -544,7 +514,6 @@ span.counter{
 	display: flex;
 	-webkit-box-pack: end;
 	        justify-content: flex-end;
-/*	margin-right: 70px;*/
 }
 .bottom_map__description{
 	position: relative;
@@ -555,7 +524,6 @@ span.counter{
 	background-color: #18afd3;
 	color: #fff;
 	padding: 20px;
-/*	z-index: 2;*/
 }
 .bottom_map__description{
 	padding: 50px;
@@ -587,7 +555,6 @@ span.counter{
 }
 .footer_logo img{
 	height: 88px;
-/*	width: auto;*/
 	-o-object-fit: contain;
 	   object-fit: contain;
 	display: block;
@@ -646,11 +613,6 @@ span.counter{
 	}
 }
 @media (max-width: 1000px){
-/*
-	.header_info{
-		display: none;
-	}
-*/
 	div.header_cards, div.phone_numbers{
 		display: none;
 	}
@@ -677,7 +639,6 @@ span.counter{
 		display: -webkit-box;
 		display: flex;
 		justify-content: space-around;
-/*		flex-direction: column;*/
 	}
 	.fotter_nav__info br{
 		display: none;
@@ -688,8 +649,7 @@ span.counter{
 		height: 1px;
 		border: none;
 		margin: 0px;
-		margin-bottom: 5px;
-		
+		margin-bottom: 5px;		
 	}
 }
 
@@ -761,13 +721,9 @@ span.counter{
 }
 @media (max-width: 500px){
 	
-/*
-	.nav_line a{
-		font-size: 18px;
-	}
-*/
 	.qualities h1{
 		text-align: center;
+		font-size: 32;
 	}
 	.comment_slider h1{
 		text-align: center;
@@ -984,6 +940,5 @@ span.counter{
 }
 .contact_title h1{
 	color: #fff;
-/*	font-size: 50px;*/
 	font-weight: normal;
 }
