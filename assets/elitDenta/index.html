@@ -51,48 +51,30 @@
 				</div>
 			</div>
 		</div>
-<!--
-		<div class="wrapper_call_back__box">
-			<div class="call_back__box">
-				<div class="call_back__for container m-0">
-					<form action="">
-						<h1>Заявка на обратный звонок</h1>
-						<input type="tel" placeholder="Телефон" class="phone_number">
-						<p class="form__checbox">
-							<input type="checkbox" id="form_cb">
-							<label for="form_cb">Я согласен на обработку моих персональных данных в соответствии с №152-ФЗ</label>
-						</p>
-						<button type="button" class="send_number">Отправить</button>
-					</form>
-					<button class="hide_button" type="submit"><i class="fas fa-times"></i></button>
-				</div>
-			</div>
-		</div>
--->
-	<div class="modal fade wrapper_call_back__box" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<div class="call_back__for container m-0">
-						<form action="">
-							<h1>Заявка на обратный звонок</h1>
-							<input type="tel" placeholder="Телефон" class="phone_number" pattern="^[А-Яа-яЁё\s]+$" required>
-							<p class="form__checbox">
-								<input type="checkbox" id="form_cb" required>
-								<label for="form_cb">Я согласен на обработку моих персональных данных в соответствии с №152-ФЗ</label>
-							</p>
-							<button type="button" class="send_number">Отправить</button>
-						</form>
+		<div class="modal fade wrapper_call_back__box" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="call_back__for container m-0">
+							<form action="">
+								<h1>Заявка на обратный звонок</h1>
+								<input type="tel" placeholder="Телефон" class="phone_number" pattern="^[А-Яа-яЁё\s]+$" required>
+								<p class="form__checbox">
+									<input type="checkbox" id="form_cb" required>
+									<label for="form_cb">Я согласен на обработку моих персональных данных в соответствии с №152-ФЗ</label>
+								</p>
+								<button type="button" class="send_number">Отправить</button>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 	</header>
 	<main>
 		<div class="container-fluid position_abs wrapper_nav wrapper_nav__scroll ">
@@ -386,7 +368,7 @@
 				<h1>Записаться на прием</h1>
 				<form action="">
 					<input type="text" placeholder="Имя" class="mb-4" pattern="^[А-Яа-яЁё\s]+$" required>
-					<input type='tel' placeholder="Телефон" class="mb-4" pattern="^((\+7|7|8)+([0-9]){10})$" required>
+					<input type='tel' placeholder="Телефон в формате +71234567890" class="mb-4" pattern="^((\+7|7|8)+([0-9]){10})$" required>
 					<button type="submit" class="mb-4">Оставить заявку</button>
 				</form>
 			</div>
