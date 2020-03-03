@@ -18,7 +18,7 @@
     max-width: 1200px;
 }
 .wrapperMainContainer{
-    min-width: 100vw;
+    /* width: 100vw; */
     min-height: 100vh;
     background-image: url('../assets/img/bg_img.png');
     background-size: cover;
@@ -62,15 +62,16 @@
 .exampleItem_item h2{
     z-index: 3;
     font-size: 28px;
-    color: blueviolet;
+    color: purple;
     width: 100%;
     text-align: center;
     transition: 2s;
+    font-weight: bold;
 }
 .exampleItem_item:hover h2{
     color: #fff;
-    background-color: blueviolet;
-    /* font-weight: bold;    */
+    background-color: purple;
+    font-weight: normal;   
 }
 .exampleItem_item:hover img.imgTop{
     filter: alpha(opacity=0);
