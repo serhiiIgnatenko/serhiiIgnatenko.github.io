@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sundspace</title>
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/libs/smooth-scrollbar-master/smooth-scrollbar.css">
+    <link rel="stylesheet"  href="./assets/style/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./assets/libs/smooth-scrollbar-master/smooth-scrollbar.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</head>
+<body>
+    <div class="wrapper" data-scrollbar id="my-scrollbar_body">
+        <header class="header container p-0">
+                <nav class="navbar navbar-expand-md navbar-dark">
+                    <a class="logoName" href="#">Sundspace</a>
+                </nav>
+        </header>
+        <main class="main">    
+            <div class="container">
+                <div class="container_form">
+                    <h1 class="title_section title_section__secure-icon">Secure Checkout</h1>
+                    <form action="" class="needs-validation" novalidate>
+                        <div class="row">                            
+                            <div class="col-12 col-xl-8">
+                                <div class="form_section ">
+                                    <div class="lodding d-none">
+                                        <svg class="spinner" viewBox="0 0 50 50">
+                                            <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+                                        </svg>
+                                    </div>
+                                    <p class="form_error-title form_border-bottom d-none">Enter shipping address</p>
+                                    <h5 class="form_title form_border-bottom">Ship to</h5>
+                                    <div class="form_form-list form_section_padding">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 pb-3">
+                                                <h5 class="form_title_list">Shipping Address</h5>
+                                                <div class="col-12 p-0 pb-2">
+                                                    <label for="First_Name">First name<span class="required_symbol"></span></label>
+                                                    <input type="text" class="form-control" id="First_Name" value="Name" required>
+                                                    <div class="valid-tooltip text-to-valid">
+                                                    Looks good!
+                                                    </div>
+                                                </div>   
+                                                <div class="col-12 p-0 pb-2">
+                                                    <label for="Last_Name">Last name<span class="required_symbol"></span></label>
+                                                    <input type="text" class="form-control" id="Last_Name" required>
+                                                    <div class="invalid-tooltip text-to-valid">
+                                                        required
+                                                    </div>
+                                                </div>   
+                                                <div class="col-12 p-0 pb-2">
+                                                    <label for="Company_Name">Company Name (Optional)</label>
+                                                    <input type="text" class="form-control" id="Company_Name">
+                                                </div>  
+                                                <div class="col-12 p-0 pb-2">
+                                                    <label for="Street_Address">Street Address<span class="required_symbol"></span></label>
+                                                    <input type="text" class="form-control" id="Street_Address" placeholder="Street address, P.O. box" required>
+                                                    <div class="invalid-tooltip text-to-valid">
+                                                        required
+                                                    </div>
+                                                </div>   
+                                                <div class="col-12 p-0 pb-2">
+                                                    <label for="Apt/Suite">Apt/Suite (Optional)</label>
+                                                    <input type="text" class="form-control" id="Apt/Suite" placeholder="Apt, Suite, Unit, Building, Floor, etc.">
+                                                </div> 
+                                                <div class="col-12 p-0 pb-2">
+                                                    <label for="City">City<span class="required_symbol"></span></label>
+                                                    <input type="text" class="form-control" id="City" required>
+                                                    <div class="invalid-tooltip text-to-valid">
+                                                        required
+                                                    </div>
+                                                </div> 
+                                                <div class="col-12 pb-2">
+                                                   <div class="row">
+                                                       <div class="col-12 col-sm-8 p-0">
+                                                            <label for="State/Province">State / Province<span class="required_symbol"></span></label>
+                                                            <input type="text" class="form-control" id="State/Province" required>
+                                                            <div class="invalid-tooltip text-to-valid">
+                                                                required
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-12 col-sm-4 pr-0 pl_zip-0">
+                                                            <label for="ZIP_Code">ZIP Code<span class="required_symbol"></span></label>
+                                                            <input type="text" class="form-control" id="ZIP_Code" required>
+                                                            <div class="invalid-tooltip text-to-valid">
+                                                                required
+                                                            </div>
+                                                       </div>
+                                                   </div>
+                                                </div>
+                                                <div class="col-12 p-0">
+                                                    <label for="validationTooltip04Country">Country</label>
+                                                    <select class="form-control select_arrow" id="Country" required>
+                                                        <option selected disabled value="">Choose...</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                    <div class="invalid-tooltip text-to-valid">
+                                                        required
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                            <div class="col-12 col-md-6 pb-3">
+                                                <h5 class="form_title_list">Contact Info</h5>
+                                                <div class="col-12 p-0 pb-2">
+                                                    <label for="Email">Email Address<span class="required_symbol"></span></label>
+                                                    <input type="email" class="form-control" id="Email" value="test@test.com" required>
+                                                    <div class="valid-tooltip text-to-valid">
+                                                    Looks good!
+                                                    </div>
+                                                </div>   
+                                                <div class="col-12 p-0 pb-2">
+                                                    <label for="Phone Number">Phone Number<span class="required_symbol"></span></label>
+                                                    <input type="tel" class="form-control" id="Phone Number" required>
+                                                    <div class="invalid-tooltip text-to-valid">
+                                                        required
+                                                    </div>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                        <div class="form_button_section">
+                                            <div class="row">
+                                                <div class="col mb-3"><button type="button" class="btn  w-100 buttonMain">Done</button></div>
+                                                <div class="col mb-3 button__cansel d-none"><button type="button" class="btn w-100 buttonMain">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order_form_results d-none">
+                                        <ul class="order_form_results_list mark_confirmed">
+                                            <li><span class="form_fields">Amber Chels</span></li>
+                                            <li><span class="form_fields">1st street</span></li>
+                                            <li><span class="form_fields">Sachse Texas, 75048-3122</span></li>
+                                            <li><span class="form_fields">United States</span></li>
+                                            <li><span class="form_fields">(908)384-2837</span></li>
+                                            <li><span class="form_fields">amber@gmail.com</span></li>
+                                            <li><span class="form_fields"><button class="button_change">Change</button></span></li>
+                                        </ul>
+                                    </div>
+                                </div>                                    
+                                <div class="form_section wrapper_form_payment_system">
+                                    <div class="blur"></div>
+                                    <h5 class="form_title form_border-bottom">Pay with</h5>
+                                    <div class="form_section_padding form_payment_system">
+                                        <div class="col-12 p-0 form_border-bottom">
+                                            <input type="radio" name="payment_system" id="payment_system__PayPal" class="payment_system" required>
+                                            <label for="payment_system__PayPal" class="label_icon_check pt-0" >
+                                                <img src="./assets/img/logo_PayPal.svg" alt="">
+                                                <input type="hidden" name="Link_PayPal" value="Link_PayPal">
+                                            </label>
+                                        </div>
+                                        <div class="col-12 p-0">
+                                            <input type="radio" name="payment_system" id="payment_system__other" class="payment_system" required>
+                                            <label for="payment_system__other" class="label_icon_check label_other_payment_system">
+                                                <span>Credit or debit card</span>
+                                                <div class="list_other_payment_system">
+                                                    <img src="./assets/img/logo_MasterCard.svg" alt="">
+                                                    <img src="./assets/img/logo_Visa.svg" alt="">
+                                                    <img src="./assets/img/logo_Discover.svg" alt="">
+                                                    <img src="./assets/img/logo_AmerExp.svg" alt="">
+                                                </div>
+                                                <input type="hidden" name="Link_Other" value="Link_Other">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form_section">
+                                    <h5 class="form_title form_border-bottom">Review items and shipping</h5>
+                                    <div class="form_section_padding pt-0">
+                                        <div class="p-0 w-100">
+                                            <div class="basket_list__shipping">
+                                                <div class="basket_product">
+                                                    <img class="basket_product_img" src="./assets/img/home/product_basket.png" alt="">
+                                                    <div class="basket_product_description">
+                                                        <div class="description">
+                                                            <h6>Printed Poster</h6>
+                                                            <ul>
+                                                                <li><span class="description__title">Personalization:</span></li>
+                                                                <li>02.22.2010 | 06:22pm</li>
+                                                                <li>Rome, GA, USA</li>
+                                                                <li><span class="description__title">Type:</span> canvas print</li>
+                                                                <li><span class="description__title">Size:</span>16x20 inch</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="basket_product_settings wrapper_quantity_goods_paper">
+                                                            <button type="button" class="delete_product"><i class="icon icon-Basket"></i></button>
+                                                            <div class="wrapper_quantity_goods">
+                                                                <label for="">Qty</label>
+                                                                <input type="number" name="quantity_goods" id="1" class="form-control quantity_goods" value="1" min="1" step="1">
+                                                                <div class="arrows_input">
+                                                                    <span class="arrow_input arrow_up " onclick="buttonPlus(this)"></span>
+                                                                    <span class="arrow_input arrow_down" onclick="buttonMinus(this)" ></span>
+                                                                </div>
+                                                            </div>     
+                                                            <span class="product_price">$55.00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>                                  
+                                                <div class="basket_product">
+                                                    <img class="basket_product_img" src="./assets/img/home/product_basket.png" alt="">
+                                                    <div class="basket_product_description">
+                                                        <div class="description">
+                                                            <h6>Printed Poster</h6>
+                                                            <ul>
+                                                                <li><span class="description__title">Personalization:</span></li>
+                                                                <li>02.22.2010 | 06:22pm</li>
+                                                                <li>Rome, GA, USA</li>
+                                                                <li><span class="description__title">Type:</span> canvas print</li>
+                                                                <li><span class="description__title">Size:</span>16x20 inch</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="basket_product_settings">
+                                                            <button class="delete_product" type="button"><i class="icon icon-Basket"></i></button>
+                                                            <div class="wrapper_quantity_goods">
+                                                                <label for="">Qty</label>
+                                                                <input type="number" name="quantity_goods" id="2" class="form-control quantity_goods" value="1" min="1" step="1">
+                                                                <div class="arrows_input">
+                                                                    <span class="arrow_input arrow_up " onclick="buttonPlus(this)"></span>
+                                                                    <span class="arrow_input arrow_down" onclick="buttonMinus(this)"></span>
+                                                                </div>
+                                                            </div>
+                                                            <span class="product_price">$55.00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <h5 class="pt-2">Choose your delivery option:</h5>
+                                                <ul class="delivery_tracking_list">
+                                                    <li class="delivery_tracking_item">
+                                                        <input type="radio" name="delivery_tracking" id="delivery_tracking_1" class="delivery_tracking__radio" checked required>
+                                                        <label for="delivery_tracking_1" class="check_box">
+                                                            <span>Free Economy - 2 - 4 Weeks</span>
+                                                            <span class="delivery_tracking__description">No Tracking Available</span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="delivery_tracking_item">
+                                                        <input type="radio" name="delivery_tracking" id="delivery_tracking_2" class="delivery_tracking__radio" required>
+                                                        <label for="delivery_tracking_2" class="check_box">
+                                                            <span>$30.06 Express - Dec 30 - Jan 1</span>
+                                                            <span class="delivery_tracking__description">Full Tracking</span>
+                                                        </label>
+                                                    </li>     
+                                                    <li class="delivery_tracking_item">
+                                                        <input type="radio" name="delivery_tracking" id="delivery_tracking_3" class="delivery_tracking__radio" disabled required>
+                                                        <label for="delivery_tracking_3" class="check_box">
+                                                            <span>$300 Express - Apr 30 - Jun 1</span>
+                                                            <span class="delivery_tracking__description">Full Tracking</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+<!-- Пример НЕ активной области -->
+                                <div class="form_section wrapper_form_payment_system grayscale">
+                                    <div class="blur"></div>    
+                                    <h5 class="form_title form_border-bottom">Pay with</h5>
+                                        <div class="form_section_padding form_payment_system">
+                                            <div class="col-12 p-0 form_border-bottom">
+                                                <input type="radio" name="payment_system1" id="payment_system__PayPal1" class="payment_system">
+                                                <label for="payment_system__PayPal1" class="label_icon_check pt-0" >
+                                                    <img src="./assets/img/logo_PayPal.svg" alt="">
+                                                </label>
+                                            </div>
+                                            <div class="col-12 p-0">
+                                                <input type="radio" name="payment_system1" id="payment_system__other1" class="payment_system">
+                                                <label for="payment_system__other1" class="label_icon_check label_other_payment_system">
+                                                    <span>Credit or debit card</span>
+                                                    <br>
+                                                    <div class="list_other_payment_system">
+                                                        <img src="./assets/img/logo_MasterCard.svg" alt="">
+                                                        <img src="./assets/img/logo_Visa.svg" alt="">
+                                                        <img src="./assets/img/logo_Discover.svg" alt="">
+                                                        <img src="./assets/img/logo_AmerExp.svg" alt="">
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+<!-- Пример подтвержденной оплаты -->
+                                    <div class="form_section wrapper_form_payment_system">
+                                        <div class="blur"></div>
+                                            <h5 class="form_title form_border-bottom">Pay with</h5>
+                                            <div class="form_section_padding form_payment_system">
+                                                <div class="col-12 p-0 form_border-bottom">
+                                                    <input type="radio" name="payment_system2" id="payment_system__PayPal2" class="payment_system">
+                                                    <label for="payment_system__PayPal2" class="label_icon_check pt-0" >
+                                                        <img src="./assets/img/logo_PayPal.svg" alt="">
+                                                    </label>
+                                                </div>
+                                                <div class="col-12 p-0 mark_confirmed">
+                                                    <input type="radio" name="payment_system2" id="payment_system__other2" class="payment_system" checked>
+                                                    <label for="payment_system__other2" class="label_icon_check label_other_payment_system">
+                                                        <span>Credit or debit card</span>
+                                                        <br>
+                                                        <div class="list_other_payment_system">
+                                                            <img src="./assets/img/logo_MasterCard.svg" alt="">
+                                                            <img src="./assets/img/logo_Visa.svg" alt="">
+                                                            <img src="./assets/img/logo_Discover.svg" alt="">
+                                                            <img src="./assets/img/logo_AmerExp.svg" alt="">
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+<!-- Конец примера -->
+                            </div>
+                            <div class="col-12 col-xl-4">
+                                <div class="form_section form_section_padding order_options">
+                                    <ul class="order_options_list">
+                                        <li class="item_option">
+                                            <span class="name_option">Items ( <span class="name_option__quantity">2</span> )</span>
+                                            <span class="value_option value_option_cost"><span class="value_option__currency">$</span>1999.00</span>
+                                        </li>
+                                        <li class="item_option">
+                                            <span class="name_option">Shipping</span>
+                                            <span class="value_option value_option__shepping"><span class="value_option__currency d-none"></span>Free</span>
+                                        </li>
+                                        <li class="item_option form_border-bottom">
+                                            <span class="name_option">Tax</span>
+                                            <span class="value_option value_option_tax"><span class="value_option__currency">$</span>0.00</span>
+                                        </li>
+                                        <li class="item_option form_border-bottom item_option_pryce">
+                                            <span class="name_option m-0">Order total</span>
+                                            <span class="value_option value_option_total-pryce pl-3"><span class="value_option__currency">$</span>1999.00  USD</span>
+                                        </li>
+                                    </ul>
+                                    <button type="submit" class="buttonMain w-100">Confirm and pay</button>
+                                    <span class="button_text button_text__error d-none">Enter shipping address</span>
+                                    <span class="button_text button_text__updating d-none">Updating...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+<!-- пример состояния с ошибками -->
+                <div class="container_form">
+                        <h1 class="title_section title_section__secure-icon">Secure Checkout</h1>
+                        <form action="" class="needs-validation was-validated" novalidate>
+                            <div class="row">                            
+                                <div class="col-12 col-xl-8">
+                                    <div class="form_section ">
+                                        <div class="lodding d-none">
+                                            <svg class="spinner" viewBox="0 0 50 50">
+                                                <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+                                            </svg>
+                                        </div>
+                                        <p class="form_error-title form_border-bottom">Enter shipping address</p>
+                                        <h5 class="form_title form_border-bottom">Ship to</h5>
+                                        <div class="form_form-list form_section_padding">
+                                            <div class="row">
+                                                <div class="col-12 col-md-6 pb-3">
+                                                    <h5 class="form_title_list">Shipping Address</h5>
+                                                    <div class="col-12 p-0 pb-2">
+                                                        <label for="First_Name">First name<span class="required_symbol"></span></label>
+                                                        <input type="text" class="form-control" id="First_Name" value="Name" required>
+                                                        <div class="valid-tooltip text-to-valid">
+                                                        Looks good!
+                                                        </div>
+                                                    </div>   
+                                                    <div class="col-12 p-0 pb-2">
+                                                        <label for="Last_Name">Last name<span class="required_symbol"></span></label>
+                                                        <input type="text" class="form-control" id="Last_Name" required>
+                                                        <div class="invalid-tooltip text-to-valid">
+                                                            required
+                                                        </div>
+                                                    </div>   
+                                                    <div class="col-12 p-0 pb-2">
+                                                        <label for="Company_Name">Company Name (Optional)</label>
+                                                        <input type="text" class="form-control" id="Company_Name">
+                                                    </div>  
+                                                    <div class="col-12 p-0 pb-2">
+                                                        <label for="Street_Address">Street Address<span class="required_symbol"></span></label>
+                                                        <input type="text" class="form-control" id="Street_Address" placeholder="Street address, P.O. box" required>
+                                                        <div class="invalid-tooltip text-to-valid">
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quo!
+                                                        </div>
+                                                    </div>   
+                                                    <div class="col-12 p-0 pb-2">
+                                                        <label for="Apt/Suite">Apt/Suite (Optional)</label>
+                                                        <input type="text" class="form-control" id="Apt/Suite" placeholder="Apt, Suite, Unit, Building, Floor, etc.">
+                                                    </div> 
+                                                    <div class="col-12 p-0 pb-2">
+                                                        <label for="City">City<span class="required_symbol"></span></label>
+                                                        <input type="text" class="form-control" id="City" required>
+                                                        <div class="invalid-tooltip text-to-valid">
+                                                            required
+                                                        </div>
+                                                    </div> 
+                                                    <div class="col-12 pb-2">
+                                                       <div class="row">
+                                                           <div class="col-12 col-sm-8 p-0">
+                                                                <label for="State/Province">State / Province<span class="required_symbol"></span></label>
+                                                                <input type="text" class="form-control" id="State/Province" required>
+                                                                <div class="invalid-tooltip text-to-valid">
+                                                                    required
+                                                                </div>
+                                                           </div>
+                                                           <div class="col-12 col-sm-4 pr-0 pl_zip-0">
+                                                                <label for="ZIP_Code">ZIP Code<span class="required_symbol"></span></label>
+                                                                <input type="text" class="form-control" id="ZIP_Code" required>
+                                                                <div class="invalid-tooltip text-to-valid">
+                                                                    required
+                                                                </div>
+                                                           </div>
+                                                       </div>
+                                                    </div>
+                                                    <div class="col-12 p-0">
+                                                        <label for="validationTooltip04Country">Country</label>
+                                                        <select class="form-control select_arrow" id="Country" required>
+                                                            <option selected disabled value="">Choose...</option>
+                                                            <option>...</option>
+                                                        </select>
+                                                        <div class="invalid-tooltip text-to-valid">
+                                                            required
+                                                        </div>
+                                                    </div>    
+                                                </div>
+                                                <div class="col-12 col-md-6 pb-3">
+                                                    <h5 class="form_title_list">Contact Info</h5>
+                                                    <div class="col-12 p-0 pb-2">
+                                                        <label for="Email">Email Address<span class="required_symbol"></span></label>
+                                                        <input type="email" class="form-control" id="Email" value="test@test.com" required>
+                                                        <div class="valid-tooltip text-to-valid">
+                                                        Looks good!
+                                                        </div>
+                                                    </div>   
+                                                    <div class="col-12 p-0 pb-2">
+                                                        <label for="Phone Number">Phone Number<span class="required_symbol"></span></label>
+                                                        <input type="tel" class="form-control" id="Phone Number" required>
+                                                        <div class="invalid-tooltip text-to-valid">
+                                                            required
+                                                        </div>
+                                                    </div>  
+                                                </div>
+                                            </div>
+                                            <div class="form_button_section">
+                                                <div class="row">
+                                                    <div class="col mb-3"><button type="button" class="btn  w-100 buttonMain">Done</button></div>
+                                                    <div class="col mb-3 button__cansel d-none"><button type="button" class="btn w-100 buttonMain">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order_form_results d-none">
+                                            <ul class="order_form_results_list mark_confirmed">
+                                                <li><span class="form_fields">Amber Chels</span></li>
+                                                <li><span class="form_fields">1st street</span></li>
+                                                <li><span class="form_fields">Sachse Texas, 75048-3122</span></li>
+                                                <li><span class="form_fields">United States</span></li>
+                                                <li><span class="form_fields">(908)384-2837</span></li>
+                                                <li><span class="form_fields">amber@gmail.com</span></li>
+                                                <li><span class="form_fields"><button class="button_change">Change</button></span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-4">
+                                    <div class="form_section form_section_padding order_options">
+                                        <ul class="order_options_list">
+                                            <li class="item_option">
+                                                <span class="name_option">Items ( <span class="name_option__quantity">2</span> )</span>
+                                                <span class="value_option value_option_cost"><span class="value_option__currency">$</span>1999.00</span>
+                                            </li>
+                                            <li class="item_option">
+                                                <span class="name_option">Shipping</span>
+                                                <span class="value_option value_option__shepping"><span class="value_option__currency d-none"></span>Free</span>
+                                            </li>
+                                            <li class="item_option form_border-bottom">
+                                                <span class="name_option">Tax</span>
+                                                <span class="value_option value_option_tax"><span class="value_option__currency">$</span>0.00</span>
+                                            </li>
+                                            <li class="item_option form_border-bottom item_option_pryce">
+                                                <span class="name_option m-0">Order total</span>
+                                                <span class="value_option value_option_total-pryce"><span class="value_option__currency">$</span>1999.00 USD</span>
+                                            </li>
+                                        </ul>
+                                        <button type="submit" class="buttonMain w-100">Confirm and pay</button>
+                                        <span class="button_text button_text__error">Enter shipping address</span>
+                                        <span class="button_text button_text__updating d-none">Updating...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+<!-- конец примерам -->
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="row footer_nav">
+                    <div class="col-12 col-sm-auto ">
+                        <h4>CUSTOMER SERVIC</h4>
+                        <ul class="footer_list">
+                            <li class="footer_item"><a class="link_underline" href="#">Help</a></li>
+                            <li class="footer_item"><a  class="link_underline"  href="#">Shipping</a></li>
+                            <li class="footer_item"><a  class="link_underline" href="#">Returns</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-auto">
+                            <h4>CONTACT US</h4>
+                            <ul class="footer_list">
+                                <li class="footer_item">Email: <a  href="mailto:support@logo.com ">support@logo.com </a></li>
+                                <li class="footer_item">Working Day/Hours:</li>
+                                <li class="footer_item">Mon-Sun/8:00AM-6:00PM EST</li>
+                            </ul>
+                    </div>
+                </div>
+                <hr>
+                <span class="copyright"> © Sundspace 2019. All Rights Reserved / <a href=""  class="link_underline">Terms of Use</a> / <a href=""  class="link_underline">Privacy</a> / <a href=""  class="link_underline">Cookies Policy</a></span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

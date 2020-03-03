@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>pay</title>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/libs/slick-1.8.1/slick.css">
+    
+    <link rel="stylesheet" href="assets/style/main.css">
+    
+    <script src="assets/libs/jquery/jquery-3.4.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	
+	<script src="assets/js/popper.min.js"></script>
+	
+	<script src="assets/libs/slick-1.8.1/slick.js"></script>
+	
+	<script src="assets/js/script.js"></script>
+    
+    
+    
+</head>
+<body>
+<header class="header shadow-sm " id="top">
+  <div class="header_container container-fluid">
+    <div class="row align-items-center">
+      <div class="col-auto pr-0">
+      	<button class="d-xl-none d-block button__sidebar">
+      		<i class="fas fa-bars "></i>
+      		<i class="fas fa-times show_pa_menu"></i>
+      	</button>
+      </div>
+       <div class="col-auto p-0">
+        <div class="dropdown header_logo">
+          <a href="">
+            <img src="assets/img/logo.png" alt="">
+          </a>
+          <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+             aria-haspopup="true" aria-expanded="false">
+
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">xxx.travel</a>
+            <a class="dropdown-item" href="#">xxx.business</a>
+            <a class="dropdown-item" href="#">xxx.market</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="row mt-2 mb-1 align-items-center">
+			<div class="col-12 col-xl-6 d-none d-md-block">
+				<div class="row align-items-center">
+					<div class="col-auto header_text">
+						Деловой туризм<br class="d-none d-xl-block"> в Азии и СНГ
+					  </div>
+					  <div class="col">
+						<form action="" class="header_form">
+						  <div class="input-group header_search">
+							<input type="text" class="form-control" placeholder="Введите название услуги"
+								   aria-label="Example text with button addon" aria-describedby="button-addon1">
+							<div class="input-group-append">
+							  <button class="btn fotm_submit" type="search"><span class="d-none d-lg-block">Найти</span><i class="fas fa-search d-block d-lg-none "></i></button>
+							</div>
+						  </div>
+						</form>
+					  </div>
+				</div>
+			</div>
+			<div class="col-12 col-xl-6 pt-3 pt-xl-0 ">
+				<div class="row justify-content-between align-items-baseline account_description_flex">
+					<div class="col p-0 d-md-block d-none">
+						<ul class="d-flex align-items-center header_localization">
+						  <li class="p-0">
+							<form method="POST" action="https://ruasean.travel" accept-charset="UTF-8" role="form">
+								<input name="_session_key" type="hidden" value="kZbPbSBSfV0OYxe15r49Mu4CQ0sMl4ZohgEuy5KW">
+								<input name="_token" type="hidden" value="LE3rtOfz2dwjmiogMN1qbMm6QXk5uhpVlLMiQPbE">
+								<select name="currency" data-request="onSwitch" class="form-control currency-switch">
+									<option value="USD">USD</option>
+								</select>
+							</form>
+						  </li>
+						  <li class="p-0">
+							<form method="POST" action="https://ruasean.travel" accept-charset="UTF-8" role="form">
+								<input name="_session_key" type="hidden" value="kZbPbSBSfV0OYxe15r49Mu4CQ0sMl4ZohgEuy5KW">
+								<input name="_token" type="hidden" value="LE3rtOfz2dwjmiogMN1qbMm6QXk5uhpVlLMiQPbE">
+								<select name="locale" data-request="onSwitchLocale" class="form-control language-switch">
+									<option value="en" >EN</option>
+									<option value="ru" selected>RU</option>
+								</select>
+							</form>  
+						  </li>
+						  <li>
+							<a href="" class="header_heart"><i class="fas fa-heart"></i>
+							  <span>2</span></a>
+
+						  </li>
+						  <li>
+							<div class="dropdown header_cart">
+							  <a class=" dropdown-toggle" href="#" role="button" id="header_cart" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+								<i class="fas fa-shopping-cart fa-flip-horizontal"></i>
+								<span>2</span>
+							  </a>
+
+							  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="header_cart">
+								<div class=" header_basket__list">
+								  <div class="row basket_item align-items-center">
+									<div class="col-3 basket_item__img"><a href=""><img src="assets/img/product/6.png" alt=""></a>
+									</div>
+									<div class="col-9 basket_item__title"><a href="">Название и прочее описание Название и прочее
+									   </a>
+									  <div class=" basket_item__price">200USD <s>320</s></div>
+									</div>
+
+									<div class="basket_item__del"><i class="fas fa-trash-alt"></i></div>
+								  </div>
+								  <div class="row basket_item align-items-center">
+									<div class="col-3 basket_item__img"><a href=""><img src="assets/img/product/6.png" alt=""></a>
+									</div>
+									<div class="col-9 basket_item__title"><a href="">Название и прочее описание Название и прочее
+									  описание </a>
+									  <div class=" basket_item__price">200USD <s>320</s></div>
+									</div>
+
+									<div class="basket_item__del"><i class="fas fa-trash-alt"></i></div>
+								  </div>
+								  <div class="row basket_item align-items-center">
+									<div class="col-3 basket_item__img"><a href=""><img src="assets/img/product/6.png" alt=""></a>
+									</div>
+									<div class="col-9 basket_item__title"><a href="">Название и прочее описание Название и прочее
+									  описание </a>
+									  <div class=" basket_item__price">200USD <s>320</s></div>
+									</div>
+
+									<div class="basket_item__del"><i class="fas fa-trash-alt"></i></div>
+								  </div>
+								</div>
+								<div class="header_basket__total">
+								  <div class="header_basket__total__price"><small>Итого</small> <div>600 USD</div></div>
+								  <div class="header_basket__total_bg text-center">
+									<a href="" class="button button_red_fill">Перейти к оплате</a>
+								  </div>
+								</div>
+							  </div>
+							</div>
+
+						  </li>
+						</ul>
+					</div>
+					<div class="col col-sm-7 col-lg-5 col-xl">
+						<div class="account_description">
+							<div class="dropdown row justify-content-end">
+								<div class="col-auto">
+									<div class="row align-items-center justify-content-center">
+										<div class="col-auto">
+											<div class="account_photo">
+												<img src="assets/img/account_photo.png" alt="">
+											</div>
+										</div>
+										<div class="col p-0 account_description__name">
+											<p class="account_name mb-0">Константин</p>
+											<p class="account_name mb-0">Дедов</p>
+										</div>
+										<button class="btn btn-secondary dropdown-toggle col-auto pl-0" type="button" id="dropdownAccount_description" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+										<div class="dropdown-menu account_menu" aria-labelledby="dropdownAccount_description">
+											<div class="account_menu__menu">
+
+												<ul class="mb-0">
+													<li class="d-md-none d-block  ">
+														<div class="col p-0 account_menu__criteria">
+															<ul class="d-flex align-items-center header_localization justify-content-center">
+															  <li class="p-0">
+																<form method="POST" action="https://ruasean.travel" accept-charset="UTF-8" role="form">
+																	<input name="_session_key" type="hidden" value="kZbPbSBSfV0OYxe15r49Mu4CQ0sMl4ZohgEuy5KW">
+																	<input name="_token" type="hidden" value="LE3rtOfz2dwjmiogMN1qbMm6QXk5uhpVlLMiQPbE">
+																	<select name="currency" data-request="onSwitch" class="form-control currency-switch">
+																		<option value="USD">USD</option>
+																	</select>
+																</form>
+															  </li>
+															  <li class="p-0">
+																<form method="POST" action="https://ruasean.travel" accept-charset="UTF-8" role="form">
+																	<input name="_session_key" type="hidden" value="kZbPbSBSfV0OYxe15r49Mu4CQ0sMl4ZohgEuy5KW">
+																	<input name="_token" type="hidden" value="LE3rtOfz2dwjmiogMN1qbMm6QXk5uhpVlLMiQPbE">
+																	<select name="locale" data-request="onSwitchLocale" class="form-control language-switch">
+																		<option value="en" >EN</option>
+																		<option value="ru" selected>RU</option>
+																	</select>
+																</form>  
+															  </li>
+															  <li>
+																<a href="" class="header_heart"><i class="fas fa-heart"></i>
+																  <span>2</span></a>
+
+															  </li>
+															  <li>
+																<div class="dropdown header_cart">
+																  <a href="#">
+																	<i class="fas fa-shopping-cart fa-flip-horizontal"></i>
+																	<span>2</span>
+																  </a>
+																</div>
+
+															  </li>
+															</ul>
+														</div>
+													</li>
+													<li class="row">
+														<div class="user_role col-12 p-0">
+<!--															<p class="user_role__one_role">Кабинет заказчика</p>-->
+															<div class="user_role__button">
+																<div class="col-6 p-0">
+																	<a href="" class="user_role__button_L active">Заказчик</a>
+																</div>
+																<div class="col-6 p-0">
+																	<a href="" class="user_role__button_R">Поставщик</a>
+																</div>
+															</div>  					
+														</div>
+													</li>													
+													<li class="account__hover order_button_pop "><a href="">Сделать заказ</a></li>
+													<li class="account__hover "><a href="">Все заказы<span class="badge">4</span></a></li>
+													<li class="account__hover "><a href="">Документы<span class="badge">4</span></a></li>
+													<li class="account__hover "><a href="">Сообщения<span class="badge">4</span></a></li>
+													<li class="account__hover "><a href="">Настройки</a></li>
+													<li class="account__hover "><a href="">Техподдержка</a></li>
+													<li class=""><a href="" class="button_blue_fill  button_white-blue border-0">Выход</a></li>
+													<li class="d-block d-md-none pt-4">
+														<div class="col">
+															<form action="" class="header_form">
+															  <div class="input-group header_search">
+																<input type="text" class="form-control" placeholder="Введите название услуги"
+																	   aria-label="Example text with button addon" aria-describedby="button-addon1">
+																<div class="input-group-append">
+																  <button class="btn fotm_submit" type="search"><span class="d-none d-lg-block">Найти</span><i class="fas fa-search d-block d-lg-none "></i></button>
+																</div>
+															  </div>
+															</form>
+														  </div>
+													</li>
+												</ul>
+
+											</div>
+										</div>
+									</div>
+								</div>								
+							</div>
+						</div>        	
+					</div>
+					<div class="col order_button__header">
+						<a class="button  button_red_fill" href="#">Сделать заказ</a>
+					</div>
+				</div>
+			</div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="main bg_main">
+	<div class="container-fluid">
+		<div class="row position-relative">
+			<div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0 wrapper_sidebar_pa_menu">
+				<div class="sidebar_pa">
+					<div class="user_role">
+						<p class="mb-3 user_role__one_role">Кабинет заказчика</p>
+						<div class="user_role__button">
+							<div class="col-6 p-0">
+								<a href="" class="user_role__button_L active">Заказчик</a>
+							</div>
+							<div class="col-6 p-0">
+								<a href="" class="user_role__button_R">Поставщик</a>
+							</div>
+						</div>  					
+					</div>
+					<div class="sidebar_pa_menu" id="accordeonMenu">
+						<ul>
+							<li class="section_title active" id="accordeonMenu_title1">
+								<a class="section_title__pointer collapsed section_title__list section_title__list_ordert" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Заказы</a>
+							</li>  						
+								<ul class="collapse section_title_small" id="collapseExample" data-parent="#accordeonMenu" aria-labelledby="accordeonMenu_title1">
+									<li><a href="" class="">
+										<span class="section_title_small__link">Все заказы <span class="badge">4</span></span>
+									</a></li>
+									<li><a class="active" href="">
+										<span class="section_title_small__link">Избранное<span class="badge">4</span></span>
+									</a></li>
+									<li><a href="" class="">
+										<span class="section_title_small__link">Корзина <span class="badge">4</span></span>
+									</a></li>
+								</ul>
+							<li class="section_title" id="accordeonMenu_title2">
+								<a class="section_title__pointer collapsed section_title__list section_title__list_doc" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">Документы <span class="badge">4</span> </a>
+							</li>						  						
+								<ul class="collapse section_title_small" id="collapseExample1" data-parent="#accordeonMenu" aria-labelledby="accordeonMenu_title2">
+									<li><a href="" class="">
+										<span class="section_title_small__link">Все заказы</span>
+									</a></li>
+									<li><a class="active" href="">
+										<span class="section_title_small__link">Избранное</span>
+									</a></li>
+									<li><a href="" class="">
+										<span class="section_title_small__link">Корзина</span>
+									</a></li>
+								</ul>
+							<li class="section_title" id="accordeonMenu_title3">
+								<a class="section_title__pointer collapsed section_title__list section_title__list_mess" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">Сообщения <span class="badge">4</span> </a>
+							</li>							
+								<ul class="collapse section_title_small" id="collapseExample2" data-parent="#accordeonMenu" aria-labelledby="accordeonMenu_title3">
+									<li><a href="" class="">
+										<span class="section_title_small__link">Все заказы</span>
+									</a></li>
+									<li><a class="active" href="">
+										<span class="section_title_small__link">Избранное</span>
+									</a></li>
+									<li><a href="" class="">
+										<span class="section_title_small__link">Корзина</span>
+									</a></li>
+								</ul>
+							<li class="section_title" id="accordeonMenu_title4">
+								<a class="section_title__pointer collapsed section_title__list section_title__list_love" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">Настройки</a>
+							</li>
+								<ul class="collapse section_title_small" id="collapseExample3" data-parent="#accordeonMenu" aria-labelledby="accordeonMenu_title4">
+									<li><a href="" class="">
+										<span class="section_title_small__link">Профиль</span>
+									</a></li>
+									<li><a href="" class="">
+										<span class="section_title_small__link">Уведомления и рассылка</span>
+									</a></li>
+								</ul>
+							<li class="section_title" id="accordeonMenu_title5">
+								<a class="section_title__pointer collapsed section_title__list section_title__list_setting" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">Техподдержка</a>
+							</li>
+								<ul class="collapse section_title_small" id="collapseExample4" data-parent="#accordeonMenu" aria-labelledby="accordeonMenu_title5">
+									<span>Помощь для поставщиков</span>
+									<li><a href="">
+											<span class="section_title_small__link">Справочный центр</span>
+										</a></li>
+									<span>Помощь для заказяиков</span>
+									<li><a href="">
+										<span class="section_title_small__link">Справочный центр</span>
+									</a></li>
+								</ul>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col pl-4 pr-4 main_contant">
+				<div class="payPage">
+					<h4 class="main_headline">Мои заказы</h4>
+					<nav class="section_navigation section_navigation_hide">
+						<ul>
+							<li ><a class="" href="">Все заказы</a></li>
+							<li ><a class="" href="">Избранное</a></li>
+							<li ><a class="" href="">Корзина</a></li>
+						</ul>
+					</nav>
+					<div class="row m-0">
+						<div class="col-12 list_links p-0">
+							<div class="main_container h-100">
+								<div class="main_container pb-0">
+									<div class="order_namber">
+										<a href=""><i class="fas fa-arrow-circle-left"></i></a>Заказ №<span>36589</span>
+									</div>
+									<h4 class="ml-5 main_headline pt-0">Оплата на сумму <br> <span class="payPage__amount">6 500USD</span></h4>
+								</div>
+								<div class="row m-0 list_links__margin_auto">
+									<h5 class="w-100">Оплатить через банковскую карту</h5>
+									<div class="col-auto col-md-6 mb-3 list_links__item">
+										<a href="">
+											<span class="row ">
+												<span class="col-auto paySistem_img">
+													<img src="assets/img/payPage/Visa.png" alt="">
+												</span>
+												<span class="col paySistem_description">
+													<p>Яндекс.Деньги</p>
+													<span>Яндекс.Касса</span>
+												</span>
+											</span>
+										</a>
+									</div>
+									<div class="col-auto col-md-6  mb-3 list_links__item">
+										<a href="">
+											<span class="row ">
+												<span class="col-auto paySistem_img">
+													<img src="assets/img/payPage/Visa.png" alt="">
+												</span>
+												<span class="col paySistem_description">
+													<p>Visa/Mastercard</p>
+													<span>Unitpay</span>
+												</span>
+											</span>
+										</a>
+									</div>
+									<h5 class="w-100">Оплатить электронными деньгами</h5>
+									<div class="col-auto col-md-6  mb-3 list_links__item">
+										<a href="">
+											<span class="row ">
+												<span class="col-auto paySistem_img">
+													<img src="assets/img/payPage/yandex_dengi.png" alt="">
+												</span>
+												<span class="col paySistem_description">
+													<p>Яндекс.Деньги</p>
+												</span>
+											</span>
+										</a>
+									</div>
+									<div class="col-auto col-md-6  mb-3 list_links__item">
+										<a href="">
+											<span class="row ">
+												<span class="col-auto paySistem_img">
+													<img src="assets/img/payPage/paypal.png" alt="">
+												</span>
+												<span class="col paySistem_description">
+													<p>Paypal</p>
+												</span>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 payment_agreement">
+							<h5 class="col-12">Выставить счет на юридическое лицо</h5>
+							<form action="">
+								<label for="payer_name"><p>Плательщик <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="right" title="тект подсказки"></i></p>
+								<input type="text" id="payer_name" required ></label>
+								<label for="payer_address"><p>Адресс</p>
+								<textarea name="" id="payer_address" class="payment_agreement__input" required></textarea></label>
+								<label for="payer_requisites"><p>Реквизиты</p>
+								<textarea name="" id="payer_requisites"  class="payment_agreement__input" required></textarea></label>
+								<button type="submit" class="button  button_red_fill button_width__long">Далее</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="row">
+							<div class="col main_container_with_slider">			
+								<div class="main_container p-0 bg-transparent">
+									<h4 class="main_headline">Рекомендации для Вас</h4>
+									<div class="row">
+										<div class="col-12 p-0">
+											<div class="similar_products__slider">
+											  <div class="similar_products__slider_item">
+												<div class="card" style="">
+												  <div class="card-heart active"><i class="far fa-heart"></i> <i class="fas fa-heart"></i></div>
+												  <img class="card-img-top" src="assets/img/slider/img1.png" alt="Card image cap">
+												  <div class="card-body">
+													<p class="card-text text_cropping"><a href="">Название и прочее описание Название и прочее описание</a></p>
+													<p class="card-text d-flex justify-content-between align-items-center">
+													  <span class="card-price">200 USD
+														<small>320</small>
+													  </span>
+													  <a href="" class="mt-0 button_red_fill button">Заказать</a>
+													</p>
+												  </div>
+												</div>
+											  </div>
+											  <div class="similar_products__slider_item">
+												<div class="card" style="">
+												  <div class="card-heart active"><i class="far fa-heart"></i> <i class="fas fa-heart"></i></div>
+												  <img class="card-img-top" src="assets/img/slider/img1.png" alt="Card image cap">
+												  <div class="card-body">
+													<p class="card-text text_cropping"><a href="">Название и прочее описание Название и прочее описание</a></p>
+													<p class="card-text d-flex justify-content-between align-items-center">
+													  <span class="card-price">200 USD
+														<small>320</small>
+													  </span>
+													  <a href="" class="mt-0 button_red_fill button">Заказать</a>
+													</p>
+												  </div>
+												</div>
+											  </div>
+											  <div class="similar_products__slider_item">
+												<div class="card" style="">
+												  <div class="card-heart active"><i class="far fa-heart"></i> <i class="fas fa-heart"></i></div>
+												  <img class="card-img-top" src="assets/img/slider/img1.png" alt="Card image cap">
+												  <div class="card-body">
+													<p class="card-text text_cropping"><a href="">Название и прочее описание Название и прочее описание</a></p>
+													<p class="card-text d-flex justify-content-between align-items-center">
+													  <span class="card-price">200 USD
+														<small>320</small>
+													  </span>
+													  <a href="" class="mt-0 button_red_fill button">Заказать</a>
+													</p>
+												  </div>
+												</div>
+											  </div>
+											  <div class="similar_products__slider_item">
+												<div class="card" style="">
+												  <div class="card-heart active"><i class="far fa-heart"></i> <i class="fas fa-heart"></i></div>
+												  <img class="card-img-top" src="assets/img/slider/img1.png" alt="Card image cap">
+												  <div class="card-body">
+													<p class="card-text text_cropping"><a href="">Название и прочее описание Название и прочее описание</a></p>
+													<p class="card-text d-flex justify-content-between align-items-center">
+													  <span class="card-price">200 USD
+														<small>320</small>
+													  </span>
+													  <a href="" class="mt-0 button_red_fill button">Заказать</a>
+													</p>
+												  </div>
+												</div>
+											  </div>
+											  <div class="similar_products__slider_item">
+												<div class="card" style="">
+												  <div class="card-heart"><i class="far fa-heart"></i> <i class="fas fa-heart"></i></div>
+												  <img class="card-img-top" src="assets/img/slider/img1.png" alt="Card image cap">
+												  <div class="card-body">
+													<p class="card-text text_cropping"><a href="">Название и прочее описание Название и прочее описание</a></p>
+													<p class="card-text d-flex justify-content-between align-items-center">
+													  <span class="card-price">200 USD
+														<small>320</small>
+													  </span>
+													  <a href="" class="mt-0 button_red_fill button">Заказать</a>
+													</p>
+												  </div>
+												</div>
+											  </div>
+											  <div class="similar_products__slider_item">
+												<div class="card" style="">
+												  <div class="card-heart"><i class="far fa-heart"></i> <i class="fas fa-heart"></i></div>
+												  <img class="card-img-top" src="assets/img/slider/img1.png" alt="Card image cap">
+												  <div class="card-body">
+													<p class="card-text text_cropping"><a href="">Название и прочее описание Название и прочее описание</a></p>
+													<p class="card-text d-flex justify-content-between align-items-center">
+													  <span class="card-price">200 USD
+														<small>320</small>
+													  </span>
+													  <a href="" class="mt-0 button_red_fill button">Заказать</a>
+													</p>
+												  </div>
+												</div>
+											  </div>
+											</div>
+										</div>
+									</div>
+								</div>				
+								<div class="main_container p-0 bg-transparent">
+									<h4 class="main_headline">Просмотренные товары и услуги</h4>
+									<div class="row">
+										<div class="col-12 p-0">
+											<div class="similar_products__slider">
+											  <div class="similar_products__slider_item">
+												<div class="card" style="">
+												  <div class="card-heart active"><i class="far fa-heart"></i> <i class="fas fa-heart"></i></div>
+												  <img class="card-img-top" src="assets/img/slider/img1.png" alt="Card image cap">
+												  <div class="card-body">
+													<p class="card-text text_cropping"><a href="">Название и прочее описание Название и прочее описание</a></p>
+													<p class="card-text d-flex justify-content-between align-items-center">
+													  <span class="card-price">200 USD
+														<small>320</small>
+													  </span>
+													  <a href="" class="mt-0 button_red_fill button">Заказать</a>
+													</p>
+												  </div>
+												</div>
+											  </div>
+											  <div class="similar_products__slider_item">
+												<div class="card" style="">
+												  <div class="card-heart active"><i class="far fa-heart"></i> <i class="fas fa-heart"></i></div>
+												  <img class="card-img-top" src="assets/img/slider/img1.png" alt="Card image cap">
+												  <div class="card-body">
+													<p class="card-text text_cropping"><a href="">Название и прочее описание Название и прочее описание</a></p>
+													<p class="card-text d-flex justify-content-between align-items-center">
+													  <span class="card-price">200 USD
+														<small>320</small>
+													  </span>
+													  <a href="" class="mt-0 button_red_fill button">Заказать</a>
+													</p>
+												  </div>
+												</div>
+											  </div>
+											  <div class="similar_products__slider_item">
+												<div class="card" style="">
+												  <div class="card-heart active"><i class="far fa-heart"></i> <i class="fas fa-heart"></i></div>
+												  <img class="card-img-top" src="assets/img/slider/img1.png" alt="Card image cap">
+												  <div class="card-body">
+													<p class="card-text text_cropping"><a href="">Название и прочее описание Название и прочее описание</a></p>
+													<p class="card-text d-flex justify-content-between align-items-center">
+													  <span class="card-price">200 USD
+														<small>320</small>
+													  </span>
+													  <a href="" class="mt-0 button_red_fill button">Заказать</a>
+													</p>
+												  </div>
+												</div>
+											  </div>
+											  <div class="similar_products__slider_item">
+												<div class="card" style="">
+												  <div class="card-heart active"><i class="far fa-heart"></i> <i class="fas fa-heart"></i></div>
+												  <img class="card-img-top" src="assets/img/slider/img1.png" alt="Card image cap">
+												  <div class="card-body">
+													<p class="card-text text_cropping"><a href="">Название и прочее описание Название и прочее описание</a></p>
+													<p class="card-text d-flex justify-content-between align-items-center">
+													  <span class="card-price">200 USD
+														<small>320</small>
+													  </span>
+													  <a href="" class="mt-0 button_red_fill button">Заказать</a>
+													</p>
+												  </div>
+												</div>
+											  </div>
+											  <div class="similar_products__slider_item">
+												<div class="card" style="">
+												  <div class="card-heart"><i class="far fa-heart"></i> <i class="fas fa-heart"></i></div>
+												  <img class="card-img-top" src="assets/img/slider/img1.png" alt="Card image cap">
+												  <div class="card-body">
+													<p class="card-text text_cropping"><a href="">Название и прочее описание Название и прочее описание</a></p>
+													<p class="card-text d-flex justify-content-between align-items-center">
+													  <span class="card-price">200 USD
+														<small>320</small>
+													  </span>
+													  <a href="" class="mt-0 button_red_fill button">Заказать</a>
+													</p>
+												  </div>
+												</div>
+											  </div>
+											  <div class="similar_products__slider_item">
+												<div class="card" style="">
+												  <div class="card-heart"><i class="far fa-heart"></i> <i class="fas fa-heart"></i></div>
+												  <img class="card-img-top" src="assets/img/slider/img1.png" alt="Card image cap">
+												  <div class="card-body">
+													<p class="card-text text_cropping"><a href="">Название и прочее описание Название и прочее описание</a></p>
+													<p class="card-text d-flex justify-content-between align-items-center">
+													  <span class="card-price">200 USD
+														<small>320</small>
+													  </span>
+													  <a href="" class="mt-0 button_red_fill button">Заказать</a>
+													</p>
+												  </div>
+												</div>
+											  </div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div><div class="col-xl-12 bonus_link d-sm-block news_container__pre">
+								<div class="news_container bg-white h-100">
+									<div class="row">
+										<div class="col-12">
+											<p class="news_title">Лента новостей</p>
+										</div>
+										<div class="col-12 col-sm-6 col-xl wrapper_news_article">
+											<a href="">
+												<div class="news_article">
+													<img src="assets/img/news_block/1.png" alt="">
+													<div class="">
+														<p class="news_article__description">История Сингапура в 10 блюдах</p>
+														<p class="news_article__date"><i class="far fa-clock"></i> <span>29 July 2019</span></p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-12 col-sm-6 col-xl wrapper_news_article">
+											<a href="">
+												<div class="news_article">
+													<img src="assets/img/news_block/1.png" alt="">
+													<div class="">
+														<p class="news_article__description">В каких странах Азиатско-Тихоокеанского региона лучше всего отдыхать в 2019 году</p>
+														<p class="news_article__date"><i class="far fa-clock"></i> <span>29 July 2019</span></p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-12 col-sm-6 col-xl wrapper_news_article">
+											<a href="">
+												<div class="news_article">
+													<img src="assets/img/news_block/1.png" alt="">
+													<div class="">
+														<p class="news_article__description">Лучший в мире паспорт выдают в Сингапуре</p>
+														<p class="news_article__date"><i class="far fa-clock"></i> <span>29 July 2019</span></p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-12 col-sm-6 col-xl wrapper_news_article">
+											<a href="">
+												<div class="news_article">
+													<img src="assets/img/news_block/1.png" alt="">
+													<div class="">
+														<p class="news_article__description">Что важно знать о Малайзии?</p>
+														<p class="news_article__date"><i class="far fa-clock"></i> <span>29 July 2019</span></p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-12 col-sm-6 col-xl wrapper_news_article">
+											<a href="">
+												<div class="news_article">
+													<img src="assets/img/news_block/1.png" alt="">
+													<div class="">
+														<p class="news_article__description">Что привезти из Малайзии?</p>
+														<p class="news_article__date"><i class="far fa-clock"></i> <span>29 July 2019</span></p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-12 col-sm-6 col-xl wrapper_news_article">
+											<a href="">
+												<div class="news_article">
+													<img src="assets/img/news_block/1.png" alt="">
+													<div class="">
+														<p class="news_article__description">Топ-15 кафе для Instagram в Сингапуре</p>
+														<p class="news_article__date"><i class="far fa-clock"></i> <span>29 July 2019</span></p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-12 col-sm-6 col-xl wrapper_news_article">
+											<a href="">
+												<div class="news_article">
+													<img src="assets/img/news_block/1.png" alt="">
+													<div class="">
+														<p class="news_article__description">Потаенные уголки на острове Чеджу, о которых знают только местные жители</p>
+														<p class="news_article__date"><i class="far fa-clock"></i> <span>29 July 2019</span></p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-12 col-sm-6 col-xl wrapper_news_article">
+											<a href="">
+												<div class="news_article">
+													<img src="assets/img/news_block/1.png" alt="">
+													<div class="">
+														<p class="news_article__description">Перспективы для специалистов в сфере высоких технологий в Сингапуре</p>
+														<p class="news_article__date"><i class="far fa-clock"></i> <span>29 July 2019</span></p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-12 col-sm-6 col-xl wrapper_news_article">
+											<a href="">
+												<div class="news_article">
+													<img src="assets/img/news_block/1.png" alt="">
+													<div class="">
+														<p class="news_article__description">За лайками нужно ехать в Сингапур</p>
+														<p class="news_article__date"><i class="far fa-clock"></i> <span>29 July 2019</span></p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-12">
+											<a class="button_blue_fill button_white-blue d-block text-center button_width" href="">Еще новости</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</main>
+
+<footer class="footer">
+       <section class="footer_mail">
+        <div class="container">
+            <div class="row align-items-center">
+            	<div class="col-12 col-md-6 col-lg p-0">
+				</div>
+				<div class="col-12 col-md-6  col-lg-4 ">
+					<div class="row pt-3 align-items-center">
+						<div class="col-4 col-sm-3 col-lg-4"><img src="assets/img/message.svg" alt=""></div>
+						<div class="col-8 col-sm-7 col-lg-8 footer_mail__text">Подпишитесь на уведомления и новости!</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6 mt-4 mt-lg-0">
+
+					<form action="" class="footer_form p-0">
+
+						<input class="foorm_emeil " type="email" placeholder="Почта" name="email" required="">
+						<input type="submit" value="Подписаться" class="button_blue_fill button_footer">
+
+					</form>
+
+				</div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg">
+                <ul>
+                    <li>Помощь и сервисы</li>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Вопрос - ответ</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg">
+                <ul>
+                    <li>Наши услуги</li>
+                    <li><a href="#">Организация мароприятия</a></li>
+                    <li><a href="#">Привлечение участников</a></li>
+                    <li><a href="#">Поиск помещения</a></li>
+                    <li><a href="#">Поиск профессионала</a></li>
+                    <li><a href="#">Полиграфия и сувениры</a></li>
+                    <li><a href="#">Аренда оборудования</a></li>
+                    <li><a href="#">Транспортные услуги</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg pt-3 pt-lg-0">
+                <ul>
+                    <li>О нас</li>
+                    <li><a href="">СМИ о нас</a></li>
+                    <li><a href="#">Парнерство</a></li>
+                    <li><a href="#">Наши мероприятия</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg pt-3 pt-lg-0">
+                <ul>
+                    <li>Группа компаний </li>
+                    <li><a href="#" class="footet_compani"> SERVICES </a></li>
+                    <li><a href="#" class="footet_compani">  BUSINESS</a></li>
+                    <li><a href="#" class="footet_compani"> TRADE</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg text-lg-right">
+                <ul>
+                    <li>Контакты</li>
+                    <li>+(65) 6808-6212
+                        <small>Для звонков Сингапуре</small>
+                    </li>
+
+                    <li class="pt-3">+7(495) 374-86-57
+                        <small>Для звонков в России</small>
+                    </li>
+                    <li class="">
+                        <ul class="social_network flex_between_end">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row footer_copi">
+            <div class="col">
+                <i class="far fa-copyright"></i>All right reserved
+            </div>
+        </div>
+
+    </div>
+</footer>
+<div class="lift_up">
+    <a href="#top"><i class="far fa-arrow-alt-circle-up"></i></a>
+</div>
+
+</body>
+</html>

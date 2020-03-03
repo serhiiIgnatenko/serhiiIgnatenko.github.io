@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page</title>
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/libs/smooth-scrollbar-master/smooth-scrollbar.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./assets/libs/smooth-scrollbar-master/smooth-scrollbar.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</head>
+<body id="particles-js">
+    <div class="wrapper" data-scrollbar id="my-scrollbar_body">
+        <header class="header container p-0">
+                <nav class="navbar navbar-expand-md navbar-dark">
+                    <a class="logoName" href="#"> Sundspace</a>
+                    <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="burgerIcon"><span></span></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarsExample04">
+                        <div class=" mobile_menu">
+                            <ul class="navbar-nav headerNav">
+                                <li class="nav-item active">
+                                    <a class="headerNav_link link_underline" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class=" headerNav_link link_underline" href="#">Help</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="headerNav_link link_underline" href="#">About Us</a>
+                                </li>
+                            </ul>
+                            <ul class="userNav">
+                                <li class="userNav_item userNav_loginBox" id="user_menu">
+                                    <div class="user_menu user_menu__menu login">
+                                        <button type="button" onclick="login()" class="btn btn-primary buttonMain">login</button>
+                                    </div>
+                                    <div class="user_menu user_menu__menu authorized active">
+                                        <h5 >Hellow,<span class="userName">eugenekoan</span></h5>
+                                        <p class="d-flex justify-content-between">Not you? <a class="link_underline ml-4" href="#">Login »</a></p>
+                                        <ul class="order_list">
+                                            <li class="order_list_item item_clock"><a class="link_underline item_clock" href="">Order History</a></li>
+                                            <li class="order_list_item item_geo"><a class="link_underline" href="">Shipping Address</a></li>
+                                            <li class="order_list_item item_geo"><a class="link_underline" href="">Billing Address</a></li>
+                                            <li class="order_list_item "><a class="link_underline" href=""></a></li>
+                                            <li class="order_list_item item_lock"><a class="link_underline" href="">Email / Password Reset</a></li>
+                                        </ul>                                
+                                        <hr>
+                                        <a href="#" onclick="logout()">Logout</a>
+                                    </div>
+                                    <i class="icon icon-user"></i>
+                                </li>                       
+                                <li class="userNav_item" id="user_basket">
+                                        <div class="user_menu user_basket active">
+                                            <h5 class="pr-3">Shopping Cart</h5>
+                                            <div class=" basket_product_null">
+                                                <p>Your Cart Is Currently Empty</p>
+                                            </div>
+                                            <div class="wrapper_basket_list p-0 w-100">
+                                                <div class="basket_list" data-scrollbar id="my-scrollbar_box">
+                                                    <div class="basket_product">
+                                                        <img class="basket_product_img" src="./assets/img/home/product_basket.png" alt="">
+                                                        <div class="basket_product_description">
+                                                            <div class="description">
+                                                                <h6>Printed Poster</h6>
+                                                                <p class="pb-2 description_cutText">Unframed Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nisi!</p>
+                                                                <p>Size: 8x10 inch </p>
+                                                            </div>
+                                                            <div class="basket_product_settings">
+                                                                <button class="delete_product"><i class="icon icon-Basket"></i></button>
+                                                                <a href="#">edit</a>                                                    
+                                                                <span class="product_price">$55.00</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>                                    
+                                                    <div class="basket_product">
+                                                        <img class="basket_product_img" src="./assets/img/home/product_basket.png" alt="">
+                                                        <div class="basket_product_description">
+                                                            <div class="description">
+                                                                <h6>Printed Poster</h6>
+                                                                <p class="pb-2 description_cutText">Unframed </p>
+                                                                <p>Size: 8x10 inch </p>
+                                                            </div>
+                                                            <div class="basket_product_settings">
+                                                                <button class="delete_product"><i class="icon icon-Basket"></i></button>
+                                                                <a href="#">edit</a>
+                                                                <span class="product_price">$55.00</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="basket_totalPrice">
+                                                    <p class="">Subtotal (<span class="number_units">2</span> items): $ <span class="total_price">70.00</span></p>
+                                                    <a href="shipping_address.html" class="buttonMain">ChECKOUT</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <a class="" href="#"><i class="icon icon-basket"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </nav>
+        </header>
+        <main class="main mainGrid">    
+            <div class="container container_height">
+                <div class="container_basic">
+                    <h1 class="title_section">Login</h1>
+                    <span class="login_separator">or</span>
+                    <div class="row mb-4">
+                        <div class="col-12 col-md-6 pt-5 container_login-form">
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                    <a class="standartLink" href="#">Forgot your password?</a>
+                                </div>                        
+                                <button type="submit" class="btn btn-primary w-100 buttonMain">Login</button>
+                            </form>
+                        </div>
+                        <div class="col-12 col-md-6 pt-5 container_login-auth">
+                                <a class="authSocial authSocial_fb" href="">Login with Facebook</a>
+                            <a class="authSocial authSocial_google" href="">Login with Google</a>                   
+                            <hr>
+                            <span>Not registered?</span>
+                            <a href="#" class="standartLink">Create an account</a>
+                        </div>
+                    </div>            
+                    <div class="alert alert-danger" role="alert">
+                        Incorrect username and/or password.
+                    </div>
+                </div>
+            </div> 
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="row footer_nav">
+                    <div class="col-12 col-sm-auto ">
+                        <h4>CUSTOMER SERVIC</h4>
+                        <ul class="footer_list">
+                            <li class="footer_item"><a class="link_underline" href="#">Help</a></li>
+                            <li class="footer_item"><a  class="link_underline"  href="#">Shipping</a></li>
+                            <li class="footer_item"><a  class="link_underline" href="#">Returns</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-auto">
+                            <h4>CONTACT US</h4>
+                            <ul class="footer_list">
+                                <li class="footer_item">Email: <a  href="mailto:support@logo.com ">support@logo.com </a></li>
+                                <li class="footer_item">Working Day/Hours:</li>
+                                <li class="footer_item">Mon-Sun/8:00AM-6:00PM EST</li>
+                            </ul>
+                    </div>
+                </div>
+                <hr>
+                <span class="copyright"> © Sundspace 2019. All Rights Reserved / <a href=""  class="link_underline">Terms of Use</a> / <a href=""  class="link_underline">Privacy</a> / <a href=""  class="link_underline">Cookies Policy</a></span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
