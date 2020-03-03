@@ -2,17 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: cursive;
+    font-family: 'Caveat', cursive;
     color: #fff;
-}
-.homemadeApple{
-    font-family: 'Homemade Apple', cursive;
-}
-.frederickaTheGreat{
-    font-family: 'Fredericka the Great', cursive; 
-}
-.pacifico{
-    font-family: 'Pacifico', cursive;;
 }
 .container{
     max-width: 1200px;
@@ -31,6 +22,11 @@
 .mainContainer{
     margin: 0 auto;
     padding: 20px 50px;
+}
+.title{
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 3px;
 }
 .exampleList{
     justify-content: space-around;
@@ -60,6 +56,7 @@
     text-decoration: none;
 }
 .exampleItem_item h2{
+    font-family: 'Fredericka the Great', cursive;
     z-index: 3;
     font-size: 28px;
     color: purple;
@@ -67,11 +64,13 @@
     text-align: center;
     transition: 2s;
     font-weight: bold;
+    text-shadow: 0px 0px 3px #fff;
 }
 .exampleItem_item:hover h2{
     color: #fff;
-    background-color: purple;
-    font-weight: normal;   
+    background-color: #800080;
+    font-weight: normal;
+    text-shadow: none;
 }
 .exampleItem_item:hover img.imgTop{
     filter: alpha(opacity=0);
@@ -102,9 +101,11 @@
     filter: grayscale(100%);
     z-index: 2;
 }
-p{
+.descriptionText{
     font-family: 'Homemade Apple', cursive;
+    font-size: 20px;
+    letter-spacing: 2px;
 }
-h2{
-    font-family: 'Fredericka the Great', cursive;
+.descriptionTextRu{
+    font-size: 26px;
 }
