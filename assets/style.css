@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    color: #fff;
+}
+.homemadeApple{
+    font-family: 'Homemade Apple', cursive;
+}
+.frederickaTheGreat{
+    font-family: 'Fredericka the Great', cursive; 
+}
+.pacifico{
+    font-family: 'Pacifico', cursive;;
+}
+.container{
+    max-width: 1200px;
+}
+.wrapperMainContainer{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url('../assets/img/bg_img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainContainer{
+    margin: 0 auto;
+    padding: 20px 50px;
+}
+.exampleList{
+    justify-content: space-around;
+}
+.exampleItem{
+    padding: 20px;
+}
+.wrapperExampleItem_item{
+    width: 100%;
+    height: 200px;
+    position: relative;    
+    margin-bottom: 20px;
+}
+.exampleItem_item{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.exampleItem_item:hover{
+    text-decoration: none;
+}
+.exampleItem_item h2{
+    z-index: 3;
+    font-size: 28px;
+    color: blueviolet;
+    width: 100%;
+    text-align: center;
+    transition: 2s;
+}
+.exampleItem_item:hover h2{
+    color: #fff;
+    background-color: blueviolet;
+    /* font-weight: bold;    */
+}
+.exampleItem_item:hover img.imgTop{
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+.exampleItem_item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    -webkit-transition: opacity 2s ease-in-out;
+    -moz-transition: opacity 2s ease-in-out;
+     -ms-transition: opacity 2s ease-in-out;
+      -o-transition: opacity 2s ease-in-out;
+         transition: opacity 2s ease-in-out;
+}
+.exampleItem_item img.imgTop{
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: url(grayscale.svg); /* Firefox 4+ */
+    filter: gray; /* IE 6-9 */
+    filter: grayscale(100%);
+    z-index: 2;
+}
+p{
+    font-family: 'Homemade Apple', cursive;
+}
+h2{
+    font-family: 'Fredericka the Great', cursive;
+}
