@@ -127,6 +127,11 @@
     background-color: red;
     box-shadow: none;
     outline: none;
+
+/* .label_icon:active{
+    background-color: red;
+    box-shadow: none;
+    outline: none;
 }
 .label_icon:focus{
     background-color: purple;
@@ -137,7 +142,7 @@
     background-color: yellow;
     box-shadow: none;
     outline: none;
-}
+} */
 .label_icon:hover .button_icon + .button_icon_img{
     opacity: 1;
 }
