@@ -124,7 +124,7 @@
     opacity: 1;    
 }
 .label_icon:active{
-    background-color: red;
+    background-color: transparent;
     box-shadow: none;
     outline: none;
 }
