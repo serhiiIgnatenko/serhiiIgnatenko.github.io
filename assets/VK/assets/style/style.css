@@ -125,6 +125,7 @@
 }
 .label_icon:active{
     background-color: transparent;
+    box-shadow: none;
 }
 .label_icon:hover .button_icon + .button_icon_img{
     opacity: 1;
