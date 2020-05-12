@@ -124,8 +124,19 @@
     opacity: 1;    
 }
 .label_icon:active{
-    background-color: transparent;
+    background-color: red;
     box-shadow: none;
+    outline: none;
+}
+.label_icon:focus{
+    background-color: purple;
+    box-shadow: none;
+    outline: none;
+}
+.label_icon:focus{
+    background-color: yellow;
+    box-shadow: none;
+    outline: none;
 }
 .label_icon:hover .button_icon + .button_icon_img{
     opacity: 1;
