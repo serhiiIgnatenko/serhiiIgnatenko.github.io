@@ -133,7 +133,7 @@
     box-shadow: none;
     outline: none;
 }
-.label_icon:focus{
+.label_icon:hover{
     background-color: yellow;
     box-shadow: none;
     outline: none;
