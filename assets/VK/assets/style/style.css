@@ -123,6 +123,9 @@
     transition: 2s;
     opacity: 1;    
 }
+.label_icon:focus{
+    background-color: transparent;
+}
 .label_icon:hover .button_icon + .button_icon_img{
     opacity: 1;
 }
