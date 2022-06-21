@@ -14,7 +14,7 @@
 
 	<link rel="stylesheet" href="/styles/lib/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="/styles/lib/select2/select2.min.css">
-	<link rel="stylesheet" href="/styles/lib/select2/theme-select2.min.css">
+	<link rel="stylesheet" href="/styles/css/theme-select2.min.css">
 	<link rel="stylesheet" href="/styles/css/main.min.css">
 	<title>Monza Motorsports</title>
 
@@ -25,7 +25,6 @@
 	<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#2b5797">
 	<meta name="theme-color" content="#ffffff">
-
 </head>
 
 <body>
@@ -109,9 +108,34 @@
 						<div class="catalog__filter filter">
 							<div class="filter__select-section">
 								<div class="filter__select-wrapper">
-									<select class="form-select custom-select" id="catalogSelect1" required
-										data-placeholder="Select an option">
-										<option selected disabled value="">Choose...</option>
+									<select class="form-select custom-select" id="catalogSelect1"
+										data-placeholder="Year">
+										<option selected disabled value=""></option>
+										<option value="option_1">Lorem, ipsum dolor.</option>
+										<option value="option_2">Lorem ipsum dolor sit amet.</option>
+										<option value="option_3">Lorem ipsum dolor, sit amet consectetur adipisicing.
+										</option>
+										<option value="option_4">Lorem ipsum dolor sit.</option>
+										<option value="option_5">Lorem, ipsum.</option>
+										<option value="option_6">6</option>
+									</select>
+								</div>
+								<div class="filter__select-wrapper">
+									<select class="form-select custom-select" id="catalogSelect2"
+										data-placeholder="Make">
+										<option selected disabled value=""></option>
+										<option value="Honda">Honda</option>
+										<option value="Kia">Kia</option>
+										<option value="Toyota">Toyota</option>
+										<option value="Volkswagen">Volkswagen</option>
+										<option value="Toyota">Toyota</option>
+										<option value="Volkswagen">Volkswagen</option>
+									</select>
+								</div>
+								<div class="filter__select-wrapper">
+									<select class="form-select custom-select" id="catalogSelect3"
+										data-placeholder="Model">
+										<option selected disabled value=""></option>
 										<option value="option_1">1</option>
 										<option value="option_2">2</option>
 										<option value="option_3">3</option>
@@ -121,33 +145,9 @@
 									</select>
 								</div>
 								<div class="filter__select-wrapper">
-									<select class="form-select custom-select" id="catalogSelect2" required
-										data-placeholder="Select an option">
-										<option selected disabled value="">Choose...</option>
-										<option value="option_1">1</option>
-										<option value="option_2">2</option>
-										<option value="option_3">3</option>
-										<option value="option_4">4</option>
-										<option value="option_5">5</option>
-										<option value="option_6">6</option>
-									</select>
-								</div>
-								<div class="filter__select-wrapper">
-									<select class="form-select custom-select" id="catalogSelect3" required
-										data-placeholder="Select an option">
-										<option selected disabled value="">Choose...</option>
-										<option value="option_1">1</option>
-										<option value="option_2">2</option>
-										<option value="option_3">3</option>
-										<option value="option_4">4</option>
-										<option value="option_5">5</option>
-										<option value="option_6">6</option>
-									</select>
-								</div>
-								<div class="filter__select-wrapper">
-									<select class="form-select custom-select" id="catalogSelect4" required
-										data-placeholder="Select an option">
-										<option selected disabled value="">Choose...</option>
+									<select class="form-select custom-select" id="catalogSelect4"
+										data-placeholder="Trim">
+										<option selected disabled value=""></option>
 										<option value="option_1">1</option>
 										<option value="option_2">2</option>
 										<option value="option_3">3</option>
@@ -158,9 +158,9 @@
 								</div>
 
 								<div class="filter__select-wrapper">
-									<select class="form-select custom-select" id="catalogSelect5" required
-										data-placeholder="Select an option">
-										<option selected disabled value="">Choose...</option>
+									<select class="form-select custom-select" id="catalogSelect5"
+										data-placeholder="Mileage">
+										<option selected disabled value=""></option>
 										<option value="option_1">1</option>
 										<option value="option_2">2</option>
 										<option value="option_3">3</option>
@@ -228,87 +228,69 @@
 										<li class="option-item">19,855 km</li>
 										<li class="option-item">Automatic</li>
 										<li class="option-item">Diesel</li>
-										<li class="option-item">19,855 km</li>
-										<li class="option-item">Automatic</li>
-										<li class="option-item">Diesel</li>
 									</ul>
 								</div>
-								<p class="card-price accent-color" data-content="$">34.888</p>
+								<p class="card-price accent-color" data-content="$">34,888</p>
 							</div>
 						</a>
 
 						<a href="#" class="card product-card" data-sold="true">
 							<div class="card-img" data-sold-text="sold">
-								<img src="./img/product/product2.jpg" class="card-img-top" alt="...">
+								<img src="./img/product/product4.jpg" class="card-img-top" alt="...">
 							</div>
 							<div class="card-body">
 								<h5 class="card-title">
-									<span class="product-year">2019</span>
-									<span class="card-product-name accent-color">Volkswagen Tiguan</span>
+									<span class="product-year">2014</span>
+									<span class="card-product-name accent-color">Toyota Highlander XLE</span>
 								</h5>
 								<div class="card-description">
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eum quisquam
-										quam omnis
-										aliquid
-										nihil dicta sunt accusantium placeat provident?</p>
 									<ul class="option-list">
-										<li class="option-item">19,855 km</li>
+										<li class="option-item">69,000 km</li>
 										<li class="option-item">Automatic</li>
-										<li class="option-item">Diesel</li>
-										<li class="option-item">19,855 km</li>
-										<li class="option-item">Automatic</li>
-										<li class="option-item">Diesel</li>
+										<li class="option-item">Gas</li>
 									</ul>
 								</div>
-								<p class="card-price accent-color" data-content="$">34.888</p>
+								<p class="card-price accent-color" data-content="$">27,875</p>
 							</div>
 						</a>
 
 						<a href="#" class="card product-card" data-new="true">
 							<div class="card-img" data-new-text="new">
-								<img src="./img/product/product1.jpg" class="card-img-top" alt="...">
+								<img src="./img/product/product5.jpg" class="card-img-top" alt="...">
 							</div>
 							<div class="card-body">
 								<h5 class="card-title">
-									<span class="product-year">2019</span>
-									<span class="card-product-name accent-color">Volkswagen Tiguan Lorem, ipsum
-										dolor.</span>
+									<span class="product-year">2017</span>
+									<span class="card-product-name accent-color">Lexus RX 350 LUXURY</span>
 								</h5>
 								<div class="card-description">
 									<ul class="option-list">
-										<li class="option-item">19,855 km</li>
+										<li class="option-item">39,850 km</li>
 										<li class="option-item">Automatic</li>
-										<li class="option-item">Diesel</li>
-										<li class="option-item">19,855 km</li>
-										<li class="option-item">Automatic</li>
-										<li class="option-item">Diesel</li>
+										<li class="option-item">Gas</li>
 									</ul>
 								</div>
-								<p class="card-price accent-color" data-content="$">34.888</p>
+								<p class="card-price accent-color" data-content="$">38,775</p>
 							</div>
 						</a>
 
 						<a href="#" class="card product-card" data-new="true" data-sold="true">
 							<div class="card-img" data-new-text="New" data-sold-text="sold">
-								<img src="./img/product/product1.jpg" class="card-img-top" alt="...">
+								<img src="./img/product/product6.jpg" class="card-img-top" alt="...">
 							</div>
 							<div class="card-body">
 								<h5 class="card-title">
-									<span class="product-year">2019</span>
-									<span class="card-product-name accent-color">Volkswagen Tiguan Lorem, ipsum
-										dolor.</span>
+									<span class="product-year">2016</span>
+									<span class="card-product-name accent-color">Toyota Highlander LE A...</span>
 								</h5>
 								<div class="card-description">
 									<ul class="option-list">
-										<li class="option-item">19,855 km</li>
+										<li class="option-item">104,000 km</li>
 										<li class="option-item">Automatic</li>
-										<li class="option-item">Diesel</li>
-										<li class="option-item">19,855 km</li>
-										<li class="option-item">Automatic</li>
-										<li class="option-item">Diesel</li>
+										<li class="option-item">Gas</li>
 									</ul>
 								</div>
-								<p class="card-price accent-color" data-content="$">34.888</p>
+								<p class="card-price accent-color" data-content="$">23,728</p>
 							</div>
 						</a>
 
@@ -323,9 +305,6 @@
 								</h5>
 								<div class="card-description">
 									<ul class="option-list">
-										<li class="option-item">19,855 km</li>
-										<li class="option-item">Automatic</li>
-										<li class="option-item">Diesel</li>
 										<li class="option-item">19,855 km</li>
 										<li class="option-item">Automatic</li>
 										<li class="option-item">Diesel</li>
@@ -377,6 +356,24 @@
 										<li class="option-item">19,855 km</li>
 										<li class="option-item">Automatic</li>
 										<li class="option-item">Diesel</li>
+									</ul>
+								</div>
+								<p class="card-price accent-color" data-content="$">34.888</p>
+							</div>
+						</a>
+
+						<a href="#" class="card product-card">
+							<div class="card-img">
+								<img src="./img/product/product1.jpg" class="card-img-top" alt="...">
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">
+									<span class="product-year">2019</span>
+									<span class="card-product-name accent-color">Volkswagen Tiguan Lorem, ipsum
+										dolor.</span>
+								</h5>
+								<div class="card-description">
+									<ul class="option-list">
 										<li class="option-item">19,855 km</li>
 										<li class="option-item">Automatic</li>
 										<li class="option-item">Diesel</li>
@@ -401,6 +398,24 @@
 										<li class="option-item">19,855 km</li>
 										<li class="option-item">Automatic</li>
 										<li class="option-item">Diesel</li>
+									</ul>
+								</div>
+								<p class="card-price accent-color" data-content="$">34.888</p>
+							</div>
+						</a>
+
+						<a href="#" class="card product-card">
+							<div class="card-img">
+								<img src="./img/product/product1.jpg" class="card-img-top" alt="...">
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">
+									<span class="product-year">2019</span>
+									<span class="card-product-name accent-color">Volkswagen Tiguan Lorem, ipsum
+										dolor.</span>
+								</h5>
+								<div class="card-description">
+									<ul class="option-list">
 										<li class="option-item">19,855 km</li>
 										<li class="option-item">Automatic</li>
 										<li class="option-item">Diesel</li>
@@ -414,12 +429,14 @@
 			</div>
 		</div>
 
-		<div class="container-fluid bg-cp1 layout-dark p-0">
+		<div class="container-fluid bg-cp1 layout-dark p-0 box-shadow">
 			<div class="container">
 				<div class="row suitable-section">
 					<div class="col-lg-5 mb-3 mb-lg-auto">
-						<h4 class="h4">Haven't found a suitable vehicle?</h4>
-						<p>Sign up for our newsletter and be the first to know when we publish new vehicle offers.
+						<h4 class="h4 mb-3">Haven't found a suitable vehicle?</h4>
+						<p class="mb-0 suitable-section__text">Sign up for our newsletter and be the first to know when
+							we publish new vehicle
+							offers.
 						</p>
 					</div>
 					<form action="" class="col-lg-7 needs-validation" novalidate>
@@ -513,11 +530,22 @@
 						<div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree"
 							data-bs-parent="#accordionExample">
 							<div class="accordion-body">
-								3.1 The statutory warranty is completely excluded to the extent permitted by law.
-								3.3 If there is a special warranty insurance for the vehicle, this will take the place
-								of
-								the material warranty according to section 3.1 and replace it. In this case, the General
-								Terms and Conditions of the respective warranty service provider apply.
+								<p>3.1 The statutory warranty is completely excluded to the extent permitted by law.</p>
+								<p>3.2 If the vehicle still has a current factory warranty, a sales representative
+									(brand
+									representative) of the manufacturer shall provide the services owed therein. If
+									there is
+									a factory warranty, the beginning of the warranty for new vehicles or vehicles with
+									a
+									current manufacturer's warranty is not the date of the first placing on the market,
+									but
+									the beginning of the warranty in the manufacturer's system or the contractually
+									agreed
+									beginning of the warranty, if any.</p>
+								<p class="mb-0">3.3 If there is a special warranty insurance for the vehicle, this will
+									take the place
+									of the material warranty according to section 3.1 and replace it. In this case, the
+									General Terms and Conditions of the respective warranty service provider apply.</p>
 							</div>
 						</div>
 					</div>
